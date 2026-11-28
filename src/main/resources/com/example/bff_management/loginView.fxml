@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="506.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bff_management.loginViewController">
+   <children>
+      <ComboBox fx:id="enterRoleCombobox" layoutX="220.0" layoutY="195.0" prefWidth="150.0" promptText="Enter role" />
+      <TextField fx:id="enterEmailTF" layoutX="221.0" layoutY="148.0" promptText="Enter Your Email" />
+      <TextField fx:id="enterPasswordTF" layoutX="220.0" layoutY="240.0" promptText="Enter Your Password" />
+      <Button layoutX="220.0" layoutY="282.0" mnemonicParsing="false" onAction="#loginBTN" text="Login" />
+   </children>
+</AnchorPane>
