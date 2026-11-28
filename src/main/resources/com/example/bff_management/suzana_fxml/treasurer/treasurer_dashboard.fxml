@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bff_management.suzana_java.suzana_controller.treasurer_dashboard">
+<AnchorPane prefHeight="693.0" prefWidth="887.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bff_management.suzana_java.suzana_controller.treasurer_dashboard">
    <children>
-      <Label fx:id="label" layoutX="272.0" layoutY="158.0" text="Im tresurer" />
-      <Button layoutX="274.0" layoutY="207.0" mnemonicParsing="false" onAction="#logbutton" text="log" />
+      <BorderPane fx:id="boarderPane" layoutX="9.0" layoutY="18.0" prefHeight="662.0" prefWidth="860.0">
+         <left>
+            <VBox prefHeight="670.0" prefWidth="162.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#approveTournamentBTN" prefHeight="66.0" prefWidth="163.0" text="Create Budget" />
+                  <Button mnemonicParsing="false" onAction="#approveTeamRegistrationBTN" prefHeight="66.0" prefWidth="162.0" text="Record Sponsorship Income" />
+                  <Button mnemonicParsing="false" onAction="#approveTournamentBudgetBTN" prefHeight="66.0" prefWidth="160.0" text="Record Tournamnet Expence" />
+                  <Button mnemonicParsing="false" onAction="#rejectTournamentBTN" prefHeight="66.0" prefWidth="162.0" text="Record Ticket Income" />
+                  <Button mnemonicParsing="false" onAction="#viewFinancialSummary" prefHeight="66.0" prefWidth="165.0" text="View Transaction His" />
+                  <Button mnemonicParsing="false" onAction="#viewTournamentRequest" prefHeight="66.0" prefWidth="166.0" text="Process Payment" />
+                  <Button mnemonicParsing="false" onAction="#approveTournamentBTN" prefHeight="66.0" prefWidth="161.0" text="General Financial Report" />
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
    </children>
 </AnchorPane>

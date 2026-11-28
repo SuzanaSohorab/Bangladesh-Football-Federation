@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-
-<BorderPane fx:id="boarderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="860.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
-   <left>
-      <VBox fx:id="sideBar" prefHeight="646.0" prefWidth="182.0" BorderPane.alignment="CENTER">
-         <children>
-            <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="185.0" text="Approve Tournament" />
-            <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="185.0" text="Approve Registered Team" />
-            <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="185.0" text="Reject Tournament" />
-            <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="185.0" text="View Financial Summary" />
-            <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="185.0" text="View Tournament Request" />
-            <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="185.0" text="View Tournamnet Report" />
-            <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="185.0" text="Approve Tournament Budget" />
-            <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="185.0" text="Log Out" />
-         </children>
-      </VBox>
-   </left>
-</BorderPane>
+<AnchorPane prefHeight="676.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bff_management.suzana_java.suzana_controller.president_dashboard">
+   <children>
+      <BorderPane fx:id="boarderPane" layoutX="-1.0" prefHeight="670.0" prefWidth="811.0">
+         <left>
+            <VBox prefHeight="670.0" prefWidth="162.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#approveTournamentBTN" prefHeight="66.0" prefWidth="163.0" text="Approve Tournamnet" />
+                  <Button mnemonicParsing="false" onAction="#approveTeamRegistrationBTN" prefHeight="66.0" prefWidth="162.0" text="Approve Team Registreaion" />
+                  <Button mnemonicParsing="false" onAction="#approveTournamentBudgetBTN" prefHeight="66.0" prefWidth="160.0" text="Approve Tournament Budget" />
+                  <Button mnemonicParsing="false" onAction="#rejectTournamentBTN" prefHeight="66.0" prefWidth="162.0" text="Reject Tournament" />
+                  <Button mnemonicParsing="false" onAction="#viewFinancialSummary" prefHeight="66.0" prefWidth="165.0" text="View Financial Summary" />
+                  <Button mnemonicParsing="false" onAction="#viewTournamentRequest" prefHeight="66.0" prefWidth="166.0" text="View Tournament Request" />
+                  <Button mnemonicParsing="false" onAction="#approveTournamentBTN" prefHeight="66.0" prefWidth="161.0" text="Approve Tournamnet" />
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>
