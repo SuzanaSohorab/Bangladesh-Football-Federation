@@ -6,12 +6,15 @@ public abstract class User {
     public final String userId;
     public String name, email;
     public String role;
+    public String password;
 
-    public User(String userId, String name, String email, String role) {
+
+    public User(String userId, String name, String email, String role,String password) {
         this.userId = userId;
         this.name = name;
         this.email = email;
         this.role = role;
+        this.password = password;
     }
 
     public String getUserId() {
@@ -42,15 +45,20 @@ public abstract class User {
         this.role = role;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     @Override
     public String toString() {
         return "User{" +
-                "userId='" + userId + '\'' +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", role='" + role + '\'' +
+                "password='" + password + '\'' +
                 '}';
     }
 
-    public abstract void login();
+
 }
